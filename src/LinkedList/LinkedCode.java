@@ -51,8 +51,8 @@ public class LinkedCode {
 			}
 		}
 		
-		newNode.next = temp.next;          //1st<-(V.I)--temp.next odatha newNode.next la store panni vachikirom
-		temp.next = newNode;               //2nd<-(V.I)--newNode la temp.next ta store pantrom
+		newNode.next = temp.next;          //1st<-(V.I)--temp.next la irukku address sa newNode.next la assign pantrom(so link create panniyachu)
+		temp.next = newNode;               //2nd<-(V.I)--newNode address sa temp.next assign pantrom(so ithukum link create panniyachu)
 		}
 		
 		public void deletepos(int pos) {
@@ -60,14 +60,15 @@ public class LinkedCode {
 				throw new IndexOutOfBoundsException("Deletion attempted on empty list ");
 			}
 			if(pos==0) {
-				head=head.next;
+				head=head.next;   //ipo 0pos delete pannanum na head.next la adutha newnode oda address irukkum so newnode than head akidu 0 pos sa delete pannirum. 
 				return;
 			}
 			
 			Node temp=head;
 			Node prev=null;
 			
-			//delete akura(index--(node)) vara jump panna for loop use pantrom
+			//delete akura(index--(node)) vera node ku
+			jump panna for loop use pantrom
 			//namma delete akanum nu soltra node la crt ah nikkum
 			for(int i=1;i<=pos;i++) {
 				prev = temp;//keep track of prev node
