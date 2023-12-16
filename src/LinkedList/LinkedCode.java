@@ -68,7 +68,7 @@ public class LinkedCode {
 			Node prev=null;
 			
 			//delete akura(index--(node)) vera node ku
-			jump panna for loop use pantrom
+			//jump panna for loop use pantrom
 			//namma delete akanum nu soltra node la crt ah nikkum
 			for(int i=1;i<=pos;i++) {
 				prev = temp;//keep track of prev node
