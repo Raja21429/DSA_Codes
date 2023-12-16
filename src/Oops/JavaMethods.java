@@ -14,6 +14,11 @@ public class JavaMethods {
 	}
 	
 	//with argument
+	public void myDob(int dob) {
+		System.out.println(dob);
+	}
+	
+	//with argument return type
 	public  int myId(int n) {
 		//System.out.println(n);
 		return n;
@@ -25,6 +30,7 @@ public class JavaMethods {
 		System.out.println(d.x);
 		myName();
 		d.myAge();
+		d.myDob(19);
 		System.out.println(d.myId(12));
 
 	}
