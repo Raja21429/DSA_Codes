@@ -1,7 +1,6 @@
 package Oops;
 
-
-		class Animal {
+class Animal {
 		    public void makeSound() {
 		        System.out.println("Some generic sound");
 		    }
@@ -32,6 +31,7 @@ package Oops;
 
 		        dog.makeSound();  // Calls Dog's makeSound
 		        cat.makeSound();  // Calls Cat's makeSound
+		     
 		    
 		
 
